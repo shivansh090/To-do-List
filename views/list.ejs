@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="Css/styles.css">
+<body>
+    <div class="box" id="heading">
+        <h1> <%=dayname%> </h1>
+    </div>
+    
+<div class="box">
+    <% for(var i=0;i<Newitem.length;i++)  {%>
+        <form action="/delete" method="post">
+    <div class="item">
+        <input name="checkbox"  onchange="this.form.submit()" type="checkbox" value=<%=Newitem[i]._id%>>
+        
+        <p> <%=Newitem[i].name%> </p>
+    </div>
+    <input type="hidden" name="listt" value=<%=dayname%>>
+     </form>
+    <%}%>
+
+    <form autocomplete="off" action="/" method="post">
+        <input type="text" placeholder="Enter task here.." name="taskk" >
+        <button type="submit" name="list" value="<%=dayname%>">+</button>
+    </form>
+</div>
+  
+
+</body>
+<footer>
+    <h4><%=time%></h4>
+</footer>
+</html>
