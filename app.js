@@ -22,7 +22,6 @@ const item3 = new Items({
 name:"Eraser"
 });    
 
-
 const listSchema =mongoose.Schema({
     name:String,
     items:[itemSchema]
