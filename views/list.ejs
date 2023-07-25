@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="Css/styles.css">
 <body>
     <div class="box" id="heading">
-        <h1> <%=dayname%> </h1>
+        <h1> Today </h1>
     </div>
     
 <div class="box">
@@ -22,7 +22,7 @@
      </form>
     <%}%>
 
-    <form autocomplete="off" action="/" method="post">
+    <form class="abc" autocomplete="off" action="/" method="post">
         <input type="text" placeholder="Enter task here.." name="taskk" >
         <button type="submit" name="list" value="<%=dayname%>">+</button>
     </form>
