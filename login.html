@@ -1,0 +1,130 @@
+
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-DoList</title>
+    
+<style>@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+    
+    .container {
+      height: 100vh;
+      width: 100%;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      background-image: radial-gradient(
+        circle farthest-corner at 10% 20%,
+        rgba(253, 101, 133, 1) 0%,
+        rgba(255, 211, 165, 1) 90%
+      );
+    }
+    
+    .card {
+      border-radius: 10px;
+      box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+      width: 377px;
+      height: 377px;
+      background-color: #ffffff;
+      padding: 10px 30px;
+    }
+    
+    .card_title {
+      text-align: center;
+      padding: 10px 10px 0 10px;
+    }
+    
+    .card_title h1 {
+      font-size: 26px;
+      font-weight: bold;
+    }
+    
+    .form input {
+    
+      width: 100%;
+      background-color: #e2e2e2;
+      border: none;
+      outline: none;
+      padding: 12px 20px;
+      border-radius: 4px;
+    }
+    .username{
+       margin: 18px 0 8px 0;
+    }
+    .password{
+      margin: 9px 0 10px 0;
+    }
+    .form button {
+      margin-top: 26px;
+      background-color: #4796ff;
+      color: #ffffff;
+      font-size: 16px;
+      outline: none;
+      border-radius: 5px;
+      border: none;
+      padding: 8px 15px;
+      width: 100%;
+    }
+    
+    .card_terms {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+    }
+    .logo {
+      height: 70px ;
+      margin: auto;
+      text-align: center;
+    }
+    .logo img{
+      height: 70px;
+    }
+    .card_terms input[type="checkbox"] {
+      background-color: #e2e2e2;
+    }
+    
+    .card_terms span {
+      margin: 5px;
+      font-size: 13px;
+    }
+    
+    .card a {
+      color: #4796ff;
+      text-decoration: none;
+    }
+    .card_title span{
+      padding-top: 10px;
+      font-size:12px;
+    }
+    </style>
+
+  </head>
+  <body>
+    
+<div class="container">
+   <div class="card">
+    <div class="logo"><img src="https://i.pinimg.com/originals/46/cd/20/46cd20a33efe24abce136ee09cea122a.png" alt="logo"></div>
+  
+      <div class="card_title">
+        <h1>To-DoList</h1>
+        <span>New Users go to 👉 <a href="login">Sign Up</a></span>
+      </div>
+      <div class="form">
+      <form action="/register" method="post">
+        <input class="username" type="text" name="username" id="username" placeholder="UserName" />
+        <input class="password" type="password" name="password" placeholder="Password" id="password" />
+        <button type="submit">Sign Up</button>
+        </form>
+     
+    </div>
+  </div>
+
+  </body>
+  </html>
