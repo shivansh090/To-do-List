@@ -49,7 +49,9 @@ res.sendFile(__dirname+"/login.html");
     //         console.log(err);
     //     })
 });
- 
+ app.get("/singup.html",(req,res)=>{
+    res.sendFile(__dirname+"/singup.html");
+ })
 app.post("/login",async function(req,res){
   var usrnm=req.body.username;
   var pswd=req.body.password;
@@ -61,7 +63,7 @@ app.post("/login",async function(req,res){
       res.redirect("/"+lnk);  
      }
      else{
-      res.redirect(__dirname+"signup.html");
+      res.sendFile(__dirname+"/singup.html");
      }
  }catch(err){
      console.log(err);
