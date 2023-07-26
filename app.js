@@ -13,13 +13,13 @@ const itemSchema = mongoose.Schema({
 const Items = mongoose.model("Item", itemSchema);
 
 const item1 = new Items({
-    name: "Sleep"
+    name: "Press (+) button to add your task"
 });
 const item2 = new Items({
-    name:"Pencil"
+    name:"Trigger checkbox to delete item"
     });
 const item3 = new Items({
-name:"Eraser"
+name:"These are just demonstrational, delete them and start using your app!"
 });    
 
 const listSchema =mongoose.Schema({
